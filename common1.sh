@@ -19,7 +19,7 @@ wget https://github.com/haohaoget/N1/releases/download/${VERSION}/Armbian_20.10_
 unxz Armbian_20.10_Aml-s9xxx_buster_${KERNEL_VERSION}.img.xz
 cd ../
 cd openwrt
-sed -i "s%WHOAMI=flippy%WHOAMI=WH%g" mk_s905d_n1.sh
+sed -i "s%WHOAMI=flippy%WHOAMI=HaoHao%g" mk_s905d_n1.sh
 sed -i "s%/opt/imgs%${pathimg}%g" mk_s905d_n1.sh
 chmod +x mk_s905d_n1.sh
 sudo ./mk_s905d_n1.sh
